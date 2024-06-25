@@ -1,0 +1,338 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg-color: #191f36; 
+    --main-color: #59B2F4; 
+    --snd-bg-color: #262B40; 
+    --text-color: #fff;
+}
+
+body {
+    background-color: #262B40;
+    width: 100%;
+    position: relative;
+}
+html{
+    font-size: large;
+}
+header {
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(4, 4, 33);
+}
+
+.nav {
+    display: flex;
+}
+
+.links {
+    color: white;
+    margin: 0 3vw;
+    font-size: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header .logo {
+    height: 8vh;
+    padding-right: 2vw;
+}
+
+.home {
+    width: 100%;
+    height: 90vh;
+    background: url(andre-francois-mckenzie-iGYiBhdNTpE-unsplash.jpg);
+    background-position:center;
+    background-size: cover;
+    color: white;
+}
+
+/* .heading {
+    margin: 15vh 4vw;
+} */
+
+span {
+    font-size: 2.5rem;
+    color: orange;
+}
+
+.intro {
+    padding: 15vh 5vw;
+}
+
+.intro h2 {
+    font-size: 6vh;
+}
+
+.intro p {
+    font-size: 4vh;
+}
+
+.btnImg {
+    height: 10vh;
+}
+
+.liveBtn {
+    display: flex;
+    color: orange;
+    width: 32vw;
+    justify-content: space-between;
+    position: relative;
+    top: 22vh;
+    left: 46%;
+}
+
+.wholeBtn {
+    display: flex;
+    height: 14vh;
+    width: 12vw;
+    border-radius: 18%;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 5vw;
+}
+
+.contentBtn {
+    padding-left: 4px;
+}
+
+#bitcoin, #ethereum, #dogecoin {
+    font-size: 1.5rem;
+    /* color: orange; */
+    color: goldenrod;
+}
+
+.priceChart {
+    padding-top: 10vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.market {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    border-left: 3vw;
+    color: white;
+}
+
+.market > div {
+    width: 85%;
+}
+
+.mktContent {
+    padding: 5vh 0;
+    text-align: center;
+    font-size: 5vh;
+    color: white;
+}
+
+.redBold {
+    font-size: 2rem;
+    color: red;
+}
+
+.contact {
+    padding: 6vh 20vw;
+    background: #191f36;
+    width: 100%;
+    height: 100vh;
+}
+
+.heading {
+    margin: 6vh 20vw;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+    width: 100%;
+    height: 5vh;
+    font-size: large;
+    font-weight: bold;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 0.7rem 0;
+    background-color: #1e243d;
+}
+
+.Submitbtn {
+    position: relative;
+    left: 20vw;
+    height: 4vh;
+    width: 23%;
+    border-radius: 10px;
+    background-color: #59B2F4;
+}
+
+@media (max-width: 991px) {
+    .wholeBtn {
+        width: 11vw;
+        margin-right: -7vh;
+    }
+
+    .liveBtn {
+        display: grid;
+        position: relative;
+        left: 73%;
+        top: -12vh;
+    }
+
+    span {
+        font-size: 3rem;
+    }
+    .market > div {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro h2 {
+        font-size: 4vh;
+    }
+
+    .intro p {
+        font-size: 3vh;
+    }
+
+    .liveBtn {
+        display: grid;
+        grid-gap: 5vh;
+        position: relative;
+        left: 64%;
+        top: -2vh;
+    }
+
+    .wholeBtn {
+        position: relative;
+        margin-bottom: -7vh;
+    }
+
+    .market {
+        display: grid;
+    }
+
+    .mktContent {
+        padding: 3vh 30vw;
+        font-size: 5vh;
+        color: white;
+    }
+
+    span {
+        font-size: 6vh;
+    }
+
+    .market > div {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .liveBtn {
+        display: grid;
+        grid-gap: 5vh;
+        position: relative;
+        left: 47%;
+        top: -5vh;
+    }
+
+    .wholeBtn {
+        position: relative;
+        margin-bottom: -5vh;
+    }
+
+    .market {
+        display: grid;
+    }
+
+    .mktContent {
+        padding: 3vh 30vw;
+        font-size: 5vh;
+        color: white;
+    }
+
+    span {
+        font-size: 5vh;
+    }
+
+    .Submitbtn {
+        position: relative;
+        left: 20vw;
+        height: 4vh;
+        width: 23vw;
+        border-radius: 10px;
+        background-color: #59B2F4;
+    }
+    .market > div {
+        width: 90%;
+    }
+}
+
+@media (max-width:360px){
+    .liveBtn {
+        display: grid;
+        grid-gap: 5vh;
+        position: relative;
+        left: 38%;
+        top: -9vh;
+    }
+
+    .Submitbtn {
+        position: relative;
+        left: 20vw;
+        height: 4vh;
+        width: 30vw;
+        border-radius: 10px;
+        background-color: #59B2F4;
+    }
+
+    .market > div {
+        width: 90%;
+    }
+}
+
+@media (max-width: 320px) {
+    .links{
+        font-size: 2vh;
+    }
+    
+
+    .liveBtn {
+        display: grid;
+        grid-gap: 5vh;
+        position: relative;
+        left: 33%;
+        top: -9vh;
+    }
+
+    span {
+        font-size: 3.5vh;
+    }
+
+    .mktContent {
+        padding: 3vh 18vw;
+    }
+
+    .Submitbtn {
+        position: relative;
+        left: 13vw;
+        height: 4vh;
+        width: 35vw;
+        border-radius: 10px;
+        background-color: #59B2F4;
+    }
+    .market > div {
+        width: 90%;
+    }
+}

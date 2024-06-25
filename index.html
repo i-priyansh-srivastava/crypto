@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Cryptocurrecny</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav">
+            <a href="#liveMarket" class="links">Market</a>
+            <a href="./priceChart.html" class="links" target="_blank">Converter</a>
+            <a href="#contact" class="links">Contact Us</a>
+        </nav>
+
+        <div class="logo">
+            <img src="logo.png" class="logo" alt="">
+        </div>
+    </header>
+
+    <section class="home">
+        <div class="intro">
+            <h2>Invest in <span>CRYPTOCURRENCY</span></h2>
+
+            <p>World's biggest Cryptocurrecny exchange <br> available on web as well as phone.</p>
+
+        </div>
+
+        <div class="liveBtn">
+            <div class="wholeBtn">
+                <img src="bitcoin.png" alt="404" class="btnImg">
+                <div class="contentBtn">
+                    <h3>Bitcoin</h3>
+                    <h5 id="bitcoin"></h5>
+                </div>
+            </div>
+
+            <div class="wholeBtn">
+                <img src="ethereum.png" alt="404" class="btnImg">
+                <div class="contentBtn">
+                    <h3>Etherium</h3>
+                    <h5 id="ethereum"></h5>
+                </div>
+            </div>
+
+            <div class="wholeBtn">
+                <img src="dogecoin.png" alt="404" class="btnImg">
+                <div class="contentBtn">
+                    <h3>Dogecoin</h3>
+                    <h5 id="dogecoin"></h5>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </section >
+
+    <section class="priceChart" id="liveMarket">
+        <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <div class="tradingview-widget-copyright">
+                <a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"></a>
+            </div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+                {
+                    "symbols": [
+                        { "description": "", "proName": "BINANCE:BTCUSDT" },
+                        { "description": "", "proName": "NASDAQ:AAPL" },
+                        { "description": "", "proName": "NSE:NIFTY" },
+                        { "description": "", "proName": "CRYPTOCAP:DOGE" },
+                        { "description": "", "proName": "CME:ETH1!" },
+                        { "description": "", "proName": "TVC:GOLD" },
+                        { "description": "", "proName": "NASDAQ:AMZN" }
+                    ],
+                    "showSymbolLogo": true,
+                    "isTransparent": false,
+                    "displayMode": "adaptive",
+                    "colorTheme": "light",
+                    "locale": "en"
+                }
+            </script>
+        </div>
+    
+        <div class="market">
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                <div class="tradingview-widget-copyright">
+                    <a href="https://in.tradingview.com/" rel="noopener nofollow" target="_blank"></a>
+                </div>
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
+                    {
+                        "width": "100%",
+                        "height": "100%",
+                        "defaultColumn": "performance",
+                        "screener_type": "crypto_mkt",
+                        "displayCurrency": "USD",
+                        "colorTheme": "dark",
+                        "locale": "in",
+                        "isTransparent": false
+                    }
+                </script>
+            </div>
+    
+            <div class="mktContent">
+                <h3><span class="redBold">Live MARKET</span> <br> Updates</h3>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>ME</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message Here" style="height: auto;"></textarea>
+            <input type="submit" value="Send Message" class="Submitbtn">
+        </form>
+    </section>
+
+    
+    
+    <script src="./script.js"></script>
+</body>
+
+</html>
