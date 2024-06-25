@@ -296,6 +296,9 @@ span {
         border-radius: 10px;
         background-color: #59B2F4;
     }
+    span {
+        font-size: 0.8rem;
+    }
 
     .market > div {
         width: 90%;
@@ -317,7 +320,7 @@ span {
     }
 
     span {
-        font-size: 1.2rem;
+        font-size: 0.8rem;
     }
 
     .mktContent {
