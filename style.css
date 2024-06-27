@@ -236,6 +236,10 @@ span {
     .market > div {
         width: 90%;
     }
+
+    .tradingview-widget-container{
+        width: 80%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -275,7 +279,7 @@ span {
         background-color: #59B2F4;
     }
     .market > div {
-        width: 80%;
+        width: 90%;
     }
 }
 
@@ -296,12 +300,9 @@ span {
         border-radius: 10px;
         background-color: #59B2F4;
     }
-    span {
-        font-size: 0.8rem;
-    }
 
     .market > div {
-        width: 80%;
+        width: 90%;
     }
 }
 
@@ -320,7 +321,7 @@ span {
     }
 
     span {
-        font-size: 0.8rem;
+        font-size: 1.2rem;
     }
 
     .mktContent {
@@ -336,6 +337,6 @@ span {
         background-color: #59B2F4;
     }
     .market > div {
-        width: 80%;
+        width: 90%;
     }
 }
